@@ -1,0 +1,16 @@
+
+platform:  8761 - 8999
+	eureka:  8761
+	config£º 8765
+	zuul£º	
+	admin:	 
+	sleuth:   
+	turbine:   
+
+service:   9000 - 9500
+	
+
+other:  
+	jenkins: 8185
+	mysql£º	
+	rabbitmq£º  15672 & 5672

@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="79d2e937-7699-433c-922f-e1b5787f2554" name="Default" comment="modifyp">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65c2440f-0403-420d-8785-63df1a800ce0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Tc-platform-eureka/pom.xml" afterPath="$PROJECT_DIR$/Tc-platform-eureka/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/Tc-platform-eureka/src/docker/Dockerfile" afterPath="$PROJECT_DIR$/Tc-platform-eureka/src/main/docker/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/Tc-platform-sleuth/pom.xml" afterPath="$PROJECT_DIR$/Tc-platform-sleuth/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/Tc-platform-turbine/pom.xml" afterPath="$PROJECT_DIR$/Tc-platform-turbine/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/Tc-platform-zuul/pom.xml" afterPath="$PROJECT_DIR$/Tc-platform-zuul/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/build/CentOS 7 环境下安装mysql.txt" afterPath="$PROJECT_DIR$/build/CentOS 7 环境下安装mysql.txt" />
+    </list>
+    <ignored path="$PROJECT_DIR$/TC-platform-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/TC-platform-config/target/" />
+    <ignored path="$PROJECT_DIR$/TC-service-demoserver/target/" />
+    <ignored path="$PROJECT_DIR$/TC-platform-zuul/target/" />
+    <ignored path="$PROJECT_DIR$/Tc-platform-sleuth/target/" />
+    <ignored path="$PROJECT_DIR$/Tc-platform-admin/target/" />
+    <ignored path="$PROJECT_DIR$/Tc-platform-turbine/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>promptForCredentials</find>
+      <find>ObjectFactory</find>
+      <find>soalib</find>
+      <find>commons-codec</find>
+      <find>resolver</find>
+      <find>25</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>development</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TC-platform-config/src/main/java/com/yld/tcms/web/ConfigurationController.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-eureka/src/main/java/com/yld/tc/eureka/EurekaDiscoveryApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/ConfigServerApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-eureka/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/TC-service-demoserver/pom.xml" />
+        <option value="$PROJECT_DIR$/TC-service-demoserver/src/main/java/com/yld/tc/demo/web/DemoController.java" />
+        <option value="$PROJECT_DIR$/TC-service-demoserver/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-zuul-server-dev.yml" />
+        <option value="$PROJECT_DIR$/TC-platform-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/TC-platform-zuul/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-turbine/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-admin/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/Tc-platform-admin/src/main/java/com/yld/tc/admin/web/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/TC-platform-zuul/src/main/java/com/yld/tc/zuul/ZuulServiceApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Tc-platform-sleuth/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/user/UserManagement.java" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/user/IUserManagement.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/service/ConfigurationService.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/web/ConfiguratoinController.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-zuul/src/main/java/com/yld/tc/zuul/ZuulServiceApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-service-demoserver-dev.yml" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/DemoServerApplicationBootstrap.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/65c2440f-0403-420d-8785-63df1a800ce0/console.sql" />
+        <option value="$PROJECT_DIR$/Tc-platform-sleuth/src/main/java/com/yld/tc/zipkin/ZipkinServerApplicatoinBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-sleuth-dev.yml" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-turbine/src/main/java/com/yld/tc/turbine/TurbineServerApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-hystrix-dev.yml" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/domain/TableData.java" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/hello/Hello.java" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/pom.xml" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/hello/Query.java" />
+        <option value="$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/web/DemoController.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-eureka/src/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/cfg/WebMvcConfigurable.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-zuul/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-zuul-dev.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-admin/src/main/java/com/yld/tc/admin/AdminServerApplicationBootstrap.java" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-admin-dev.yml" />
+        <option value="$PROJECT_DIR$/Tc-platform-admin/src/main/resources/bootstrap.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/65c2440f-0403-420d-8785-63df1a800ce0/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d709e9-228c-4dc0-851e-1ad9c72d91ba/console.sql" />
+        <option value="$PROJECT_DIR$/Tc-platform-eureka/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/Tc-platform-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/Tc-platform-config/pom.xml" />
+        <option value="$PROJECT_DIR$/Tc-platform-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/Tc-platform-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/Tc-platform-sleuth/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Workspace\apache\apache-maven-3.5.2\.m2\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\Workspace\apache\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="529" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wks-tc-platforms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tc-platform-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="javascript.nodejs.core.library.configured.version" value="9.5.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20585366" />
+    <property name="last_opened_file_path" value="D:/vue-demo" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Oracle" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Workspace/JetBrains/workspace/wks-tc-platforms/Tc-service-demoserver/src/main/java/com/teamcenter/hello/Hello.java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\Tc-platform-eureka\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\Tc-platform-turbine\src\main\resources" />
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\Tc-platform-admin\src\main\resources" />
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\Tc-platform-sleuth\src\main\resources" />
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\Tc-platform-config\src\main\resources\config\dev" />
+      <recent name="D:\Workspace\JetBrains\workspace\wks-tc-platforms\TC-platform-zuul\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EurekaDiscoveryApplicationBootstrap">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TC-platform-zuul" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="AdminServerApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yld.tc.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.admin.AdminServerApplicationBootstrap" />
+      <module name="Tc-platform-admin" />
+      <envs />
+    </configuration>
+    <configuration name="ConfigServerApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yld.tc.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.config.ConfigServerApplicationBootstrap" />
+      <module name="Tc-platform-config" />
+      <envs />
+    </configuration>
+    <configuration name="ConfigurationApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tcms.ConfigurationApplicationBootstrap" />
+      <module name="tc-config-server" />
+      <envs />
+    </configuration>
+    <configuration name="DemoServerApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.demo.DemoServerApplicationBootstrap" />
+      <module name="Tc-service-demoserver" />
+      <envs />
+    </configuration>
+    <configuration name="EurekaApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tcms.EurekaApplicationBootstrap" />
+      <module name="tc-eureka-server" />
+      <envs />
+    </configuration>
+    <configuration name="EurekaDiscoveryApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yld.tc.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.eureka.EurekaDiscoveryApplicationBootstrap" />
+      <module name="Tc-platform-eureka" />
+      <envs />
+    </configuration>
+    <configuration name="TurbineServerApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yld.tc.turbine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.turbine.TurbineServerApplicationBootstrap" />
+      <module name="Tc-platform-turbine" />
+      <envs />
+    </configuration>
+    <configuration name="ZipkinServerApplicatoinBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.zipkin.ZipkinServerApplicatoinBootstrap" />
+      <module name="Tc-platform-sleuth" />
+      <envs />
+    </configuration>
+    <configuration name="ZuulServiceApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yld.tc.zuul.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yld.tc.zuul.ZuulServiceApplicationBootstrap" />
+      <module name="Tc-platform-zuul" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.ConfigurationApplicationBootstrap" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.EurekaApplicationBootstrap" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.DemoServerApplicationBootstrap" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.EurekaDiscoveryApplicationBootstrap" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.ConfigServerApplicationBootstrap" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.ZuulServiceApplicationBootstrap" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.TurbineServerApplicationBootstrap" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.AdminServerApplicationBootstrap" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.ZipkinServerApplicatoinBootstrap" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.EurekaDiscoveryApplicationBootstrap" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.AdminServerApplicationBootstrap" />
+        <item index="2" class="java.lang.String" itemvalue="Spring Boot.ConfigServerApplicationBootstrap" />
+        <item index="3" class="java.lang.String" itemvalue="Spring Boot.ZuulServiceApplicationBootstrap" />
+        <item index="4" class="java.lang.String" itemvalue="Spring Boot.TurbineServerApplicationBootstrap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\pc\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79d2e937-7699-433c-922f-e1b5787f2554" name="Default" comment="" />
+      <created>1520079886907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520079886907</updated>
+      <workItem from="1520079888410" duration="3287000" />
+      <workItem from="1520136939857" duration="4107000" />
+      <workItem from="1520145498756" duration="816000" />
+      <workItem from="1520146344068" duration="19530000" />
+      <workItem from="1520169588876" duration="1546000" />
+      <workItem from="1520172658448" duration="9187000" />
+      <workItem from="1520252280997" duration="7924000" />
+      <workItem from="1520261390530" duration="1750000" />
+      <workItem from="1520336861377" duration="1639000" />
+      <workItem from="1520341912782" duration="9890000" />
+      <workItem from="1520353514933" duration="1154000" />
+      <workItem from="1520420500882" duration="17859000" />
+      <workItem from="1520509775729" duration="14120000" />
+      <workItem from="1520603019070" duration="1302000" />
+      <workItem from="1520668658259" duration="2738000" />
+      <workItem from="1520689961167" duration="942000" />
+      <workItem from="1520692903943" duration="3943000" />
+      <workItem from="1520697551835" duration="2934000" />
+      <workItem from="1520750496956" duration="16596000" />
+      <workItem from="1520870654106" duration="3508000" />
+      <workItem from="1520941595636" duration="13282000" />
+      <workItem from="1521027594177" duration="3033000" />
+      <workItem from="1521115337863" duration="4098000" />
+      <workItem from="1521124012467" duration="45000" />
+      <workItem from="1521124078519" duration="2857000" />
+      <workItem from="1521202545242" duration="12912000" />
+      <workItem from="1521254491294" duration="23102000" />
+      <workItem from="1521300092122" duration="6427000" />
+      <workItem from="1521337041970" duration="9233000" />
+      <workItem from="1521460621905" duration="2444000" />
+      <workItem from="1521463896810" duration="5332000" />
+    </task>
+    <task id="LOCAL-00001" summary="modify">
+      <created>1520694680283</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520694680283</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modify">
+      <created>1520694750927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1520694750927</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modify">
+      <created>1520698425502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1520698425502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="207537000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5021322" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20095949" sideWeight="0.5169082" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35869566" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20522387" sideWeight="0.4830918" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/strong/administration/UserManagementService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/strong/administration/UserManagementRestBindingStub.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/internal/strong/administration/AuthorizationRestBindingStub.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/internal/strong/administration/UserManagementService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/internal/strong/administration/UserManagementRestBindingStub.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaAdministrationStrong_11000.2.0/1.0.RELEASE/TcSoaAdministrationStrong_11000.2.0-1.0.RELEASE.jar!/com/teamcenter/services/strong/administration/_2015_07/UserManagement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-admin/src/main/java/com/yld/tc/admin/web/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/de/codecentric/spring-boot-admin-server/1.5.7/spring-boot-admin-server-1.5.7.jar!/de/codecentric/boot/admin/registry/ApplicationRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/user/IUserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/ConfigServerApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/service/ConfigurationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/web/ConfiguratoinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/hello/HomeFolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-401">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-eureka/src/main/java/com/yld/tc/eureka/EurekaDiscoveryApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-zuul/src/main/java/com/yld/tc/zuul/ZuulServiceApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65c2440f-0403-420d-8785-63df1a800ce0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/294eb68a/65c2440f-0403-420d-8785-63df1a800ce0/ZIPKIN.zipkin_annotations" />
+    <entry file="das://table:/294eb68a/65c2440f-0403-420d-8785-63df1a800ce0/ZIPKIN.zipkin_spans" />
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/DemoServerApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#619#620#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#750#751#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#843#844#0" expanded="false" />
+            <element signature="e#887#888#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/294eb68a/65c2440f-0403-420d-8785-63df1a800ce0/ZIPKIN.zipkin_dependencies" />
+    <entry file="file://$PROJECT_DIR$/Tc-platform-sleuth/src/main/java/com/yld/tc/zipkin/ZipkinServerApplicatoinBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-turbine/src/main/java/com/yld/tc/turbine/TurbineServerApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/domain/TableData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/clientx/AppXSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="229" column="24" lean-forward="false" selection-start-line="229" selection-start-column="24" selection-end-line="229" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/yld/tc/demo/web/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+          <folding>
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/java/com/yld/tc/config/cfg/WebMvcConfigurable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/hello/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="119" column="8" lean-forward="false" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-sleuth/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-turbine/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-zuul/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-sleuth-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-zuul-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-service-demoserver-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-service-demoserver/src/main/java/com/teamcenter/hello/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-hystrix-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-admin/src/main/java/com/yld/tc/admin/AdminServerApplicationBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/src/main/resources/config/dev/tc-platform-admin-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65c2440f-0403-420d-8785-63df1a800ce0/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d709e9-228c-4dc0-851e-1ad9c72d91ba/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-admin/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-config/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="80" column="71" lean-forward="false" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-eureka/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="93" lean-forward="false" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-eureka/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-zuul/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-turbine/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="72" column="73" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-sleuth/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tc-platform-admin/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20585366" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (Tc-platform-config)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20585366" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20585366" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Tc-platform-eureka</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20585366" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20585366" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: tc-platform-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/dev,classpath:/config/prod,D:/springcloud/config/dev,D:/springcloud/config/prod
+        prefix: config
+  boot:
+    admin:
+      url: http://localhost:8785
+  rabbitmq:
+    host: 192.168.1.109
+    port: 5672
+    username: admin
+    password: admin
+
+## 192.168.1.105:8765/bus/refresh?destination=tc-platform-config:**
+
+server:
+  port: 8765
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 6
+    lease-renewal-interval-in-seconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  security:
+    enabled: false
+
+config:
+  base:
+    dir: classpath:/config
+
+info:
+  author: ken
+  description: 配置中心

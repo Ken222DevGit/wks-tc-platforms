@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.teamcenter.development:TcSoaCoreStrong_11000.2.0:1.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaCoreStrong_11000.2.0/1.0.RELEASE/TcSoaCoreStrong_11000.2.0-1.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaCoreStrong_11000.2.0/1.0.RELEASE/TcSoaCoreStrong_11000.2.0-1.0.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/teamcenter/development/TcSoaCoreStrong_11000.2.0/1.0.RELEASE/TcSoaCoreStrong_11000.2.0-1.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

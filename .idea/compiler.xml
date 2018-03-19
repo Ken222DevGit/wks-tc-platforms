@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Tc-platform-admin" />
+        <module name="Tc-platform-config" />
+        <module name="Tc-platform-eureka" />
+        <module name="Tc-platform-sleuth" />
+        <module name="Tc-platform-turbine" />
+        <module name="TC-platform-zuul" />
+        <module name="Tc-platform-zuul" />
+        <module name="TC-service-demoserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tc-config-server" target="1.8" />
+      <module name="tc-eureka-server" target="1.8" />
+      <module name="Tc-platform-admin" target="1.8" />
+      <module name="Tc-platform-config" target="1.8" />
+      <module name="Tc-platform-eureka" target="1.8" />
+      <module name="Tc-platform-sleuth" target="1.8" />
+      <module name="Tc-platform-turbine" target="1.8" />
+      <module name="TC-platform-zuul" target="1.8" />
+      <module name="Tc-platform-zuul" target="1.8" />
+      <module name="TC-service-demoserver" target="1.8" />
+      <module name="Tc-service-demoserver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

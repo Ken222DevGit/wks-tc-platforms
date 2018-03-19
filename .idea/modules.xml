@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-admin/Tc-platform-admin.iml" filepath="$PROJECT_DIR$/Tc-platform-admin/Tc-platform-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-config/Tc-platform-config.iml" filepath="$PROJECT_DIR$/Tc-platform-config/Tc-platform-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-eureka/Tc-platform-eureka.iml" filepath="$PROJECT_DIR$/Tc-platform-eureka/Tc-platform-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-sleuth/Tc-platform-sleuth.iml" filepath="$PROJECT_DIR$/Tc-platform-sleuth/Tc-platform-sleuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-turbine/Tc-platform-turbine.iml" filepath="$PROJECT_DIR$/Tc-platform-turbine/Tc-platform-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tc-platform-zuul/Tc-platform-zuul.iml" filepath="$PROJECT_DIR$/Tc-platform-zuul/Tc-platform-zuul.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: tc-platform-zuul
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: tc-platform-config
+      profile: dev
+
+info:
+  author: ken
+  description: 路由网关

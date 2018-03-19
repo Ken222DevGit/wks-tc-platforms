@@ -1,0 +1,52 @@
+下载rpm包
+
+yum install xxx.rpm
+
+
+修改一下jenkins的端口。 
+修改jenkins的配置文件在/etc/sysconfig/目录下的jenkins文件。 
+
+执行命令：
+
+vi /etc/sysconfig/jenkins
+
+然后找到JENKINS_PORT=“8080” 和JENKINS_AJP_PORT=”8009“ 这两处，将两处的端口值分别改成8888和8889（也可以改成其他空闲的端口号）。
+
+
+
+启动jenkins 服务
+
+systemctl start jenkins
+
+
+
+启动失败 查看 报错信息:
+
+Job for jenkins.service failed because the control process exited with error code. See "systemctl status jenkins.service" and "journalctl -xe" for details.
+
+ Starting LSB: Jenkins Continuous Integration Server...
+
+Starting Jenkins bash: /usr/bin/java: No such file or directory
+
+没有找到 java 命令
+
+解决方法修改 jenkins 启动脚本
+
+vim /etc/rc.d/init.d/jenkins
+
+修改以下内容：增加本机的jdk目录
+
+/etc/alternatives/java
+/usr/lib/jvm/java-1.8.0/bin/java
+/usr/lib/jvm/jre-1.8.0/bin/java
+/usr/lib/jvm/java-1.7.0/bin/java
+/usr/lib/jvm/jre-1.7.0/bin/java
+/usr/bin/java
+/usr/local/java/jdk1.8.0_161/bin/java
+
+启动jenkis
+
+systemctl start jenkins
+
+systemctl daemon-reload
+

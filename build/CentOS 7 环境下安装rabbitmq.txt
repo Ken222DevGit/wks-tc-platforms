@@ -1,0 +1,95 @@
+安装 ERLANG
+
+Yum repositories are available from Bintray and Package Cloud.
+
+Bintray Yum Repositories
+To use the Bintray Yum repositories, here are the .repo configuration files:
+
+## Erlang 20.x
+Note that OTP 20 is supported by RabbitMQ starting with version 3.6.11.
+
+To use Erlang 20.x on CentOS 7:
+
+# In /etc/yum.repos.d/rabbitmq-erlang.repo
+[rabbitmq-erlang]
+name=rabbitmq-erlang
+baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/20/el/7
+gpgcheck=1
+gpgkey=https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+repo_gpgcheck=0
+enabled=1
+
+
+
+To use Erlang 20.x on CentOS 6:
+
+# In /etc/yum.repos.d/rabbitmq-erlang.repo
+[rabbitmq-erlang]
+name=rabbitmq-erlang
+baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/20/el/6
+gpgcheck=1
+gpgkey=https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+repo_gpgcheck=0
+enabled=1
+
+
+## Erlang 19.x
+
+To use Erlang 19.x on CentOS 7:
+
+# In /etc/yum.repos.d/rabbitmq-erlang.repo
+[rabbitmq-erlang]
+name=rabbitmq-erlang
+baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/19/el/7
+gpgcheck=1
+gpgkey=https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+repo_gpgcheck=0
+enabled=1
+
+To use Erlang 19.x on CentOS 6:
+
+# In /etc/yum.repos.d/rabbitmq-erlang.repo
+[rabbitmq-erlang]
+name=rabbitmq-erlang
+baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/19/el/6
+gpgcheck=1
+gpgkey=https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+repo_gpgcheck=0
+enabled=1
+
+
+配置 erlang yum repositories 之后
+
+执行 yum install erlang
+
+With rpm and Downloaded RPM
+After downloading the server package, issue the following command as 'root':
+
+rpm --import https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+
+yum install rabbitmq-server-3.7.4-1.el7.noarch.rpm
+
+
+Run RabbitMQ Server
+Start the Server
+The server is not started as a daemon by default when the RabbitMQ server package is installed. To start the daemon by default when the system boots, as an administrator run
+
+chkconfig rabbitmq-server on
+As an administrator, start and stop the server as usual:
+
+/sbin/service rabbitmq-server start
+
+/sbin/service rabbitmq-server stop
+
+
+初始化配置rabbitmq （centos 7）
+
+rabbitmq-plugins enable rabbitmq_management
+
+firewall-cmd --add-port=5672/tcp --permanent
+firewall-cmd --add-port=15672/tcp --permanent
+firewall-cmd --reload
+
+rabbitmqctl  add_user  admin admin
+rabbitmqctl  set_user_tags  admin  administrator
+

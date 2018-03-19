@@ -1,0 +1,47 @@
+server:
+  port: 8770
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    lease-expiration-duration-in-seconds: 6
+    lease-renewal-interval-in-seconds: 2
+    prefer-ip-address: true
+
+spring:
+  boot:
+    admin:
+      discovery:
+        ignored-services: tc-platform-admin
+
+management:
+  security:
+    enabled: false
+
+zuul:
+  routes:
+    ignoredServices: '*'
+    api-a:
+      path: /api-a/**
+      serviceId: tc-service-demoserver
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

@@ -1,0 +1,17 @@
+
+【防火墙】
+
+增加端口： firewall-cmd --zone=public --permanent --add-port=8010/tcp
+重新加载： firewall-cmd --reload
+
+service firewalld restart 重启
+service firewalld start 开启
+service firewalld stop 关闭
+
+查看firewall服务状态：systemctl status firewall
+查看firewall的状态：firewall-cmd --state
+查看防火墙规则：firewall-cmd --list-all
+
+
+
+

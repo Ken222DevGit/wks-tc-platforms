@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: tc-platform-hystrix
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: tc-platform-config
+      profile: dev
+
+info:
+  author: ken
+  description: 断路聚合监控
+

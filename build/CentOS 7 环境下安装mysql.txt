@@ -1,0 +1,146 @@
+1.删除原有的mariadb，不然mysql装不进去
+
+mariadb-libs-5.5.52-1.el7.x86_64
+
+rpm -qa|grep mariadb
+
+rpm -e --nodeps mariadb-libs
+
+
+离线安装包下载：
+
+rpm -ivh mysql-community-common-5.7.21-1.el7.x86_64.rpm
+
+rpm -ivh mysql-community-libs-5.7.21-1.el7.x86_64.rpm
+
+rpm -ivh mysql-community-devel-5.7.21-1.el7.x86_64.rpm
+
+rpm -ivh mysql-community-libs-compat-5.7.21-1.el7.x86_64.rpm
+
+rpm -ivh mysql-community-client-5.7.21-1.el7.x86_64.rpm
+
+rpm -ivh mysql-community-server-5.7.21-1.el7.x86_64.rpm
+
+
+
+
+
+
+选择一个发布系列
+在使用MySQL Yum存储库时，默认选择安装最新的MySQL版本的MySQL。如果这是你想要的，你可以跳到下一步， 用Yum安装MySQL。
+
+在MySQL Yum存储库（http://repo.mysql.com/yum/）中，MySQL社区服务器的不同版本系列托管在不同的子存储库中。最新GA系列的子库（目前MySQL 5.7）默认启用，其他系列的子库（例如MySQL 5.6系列）默认为禁用。使用此命令查看MySQL Yum存储库中的所有子存储库，并查看其中哪些被启用或禁用（对于启用了dnf的系统，用dnf替换 该命令中的 yum）：
+
+shell> yum repolist all | grep mysql
+要安装最新GA系列的最新版本，不需要配置。要从最新GA系列以外的特定系列安装最新版本，请在运行安装命令之前禁用最新GA系列的子库，并为特定系列启用子库。如果您的平台支持 yum-config-manager或dnf config-manager命令，则可以通过发出以下命令来执行此操作，例如，禁用5.7系列的子存储库并启用5.6系列的子存储库; 对于不支持dnf的平台：
+
+shell> sudo yum-config-manager --disable mysql57-community
+shell> sudo yum-config-manager --enable mysql56-community
+对于支持dnf的平台：
+
+shell> sudo dnf config-manager --disable mysql57-community
+shell> sudo dnf config-manager --enable mysql56-community
+除了使用yum-config-manager或 dnf config-manager命令外，您还可以通过手动编辑/etc/yum.repos.d/mysql-community.repo 文件来选择一个系列 。这是该文件中版本系列的子版本库的典型条目：
+
+[mysql57-community]
+name=MySQL 5.7 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+找到要配置的子存储库的条目，然后编辑该enabled选项。指定 enabled=0禁用子库，或 enabled=1启用子库。例如，要安装MySQL 5.6，请确保您拥有 enabled=0MySQL 5.7的上述子版本库条目，并且具有enabled=15.6系列的条目：
+
+# Enable to use MySQL 5.6
+[mysql56-community]
+name=MySQL 5.6 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-5.6-community/el/6/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+您应该只能在任何时候为一个发行版系列启用子库。当启用多个版本系列的子库时，Yum会使用最新系列。
+
+通过运行以下命令并检查其输出（对于启用了dnf的系统，用dnf替换命令中的yum）， 验证是否已启用和禁用正确的子库 ：
+
+shell> yum repolist enabled | grep mysql
+安装MySQL
+通过以下命令安装MySQL（对于启用了dnf的系统，请使用dnf替换命令中的 yum）：
+
+shell> sudo yum install mysql-community-server
+这将安装MySQL服务器的软件包以及其他必需的软件包。
+
+启动MySQL服务器
+使用以下命令启动MySQL服务器：
+
+shell> sudo service mysqld start
+对于基于EL7的平台，这是首选命令：
+
+shell> sudo systemctl start mysqld.service
+您可以使用以下命令检查MySQL服务器的状态：
+
+shell> sudo service mysqld status
+对于基于EL7的平台，这是首选命令：
+
+shell> sudo systemctl status mysqld.service
+MySQL服务器初始化（仅适用于MySQL 5.7）：在服务器初始启动时，如果服务器的数据目录为空，则会发生以下情况：
+
+服务器已初始化。
+
+在数据目录中生成SSL证书和密钥文件。
+
+
+
+该validate_password插件安装并启用。
+
+超级用户帐户'root'@'localhost' 已创建。超级用户的密码被设置并存储在错误日志文件中。要显示它，请使用以下命令：
+
+shell> sudo grep 'temporary password' /var/log/mysqld.log
+通过使用生成的临时密码登录并尽快更改root密码并为超级用户帐户设置自定义密码：
+
+shell> mysql -uroot -p
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+注意
+MySQL的 validate_password 插件默认安装。这将要求密码至少包含一个大写字母，一个小写字母，一个数字和一个特殊字符，并且总密码长度至少为8个字符。
+
+systemctl enable mysqld
+systemctl start mysqld
+
+
+
+ERROR 1130: Host '192.168.1.3' is not allowed to connect to this MySQL 
+
+解决办法：
+
+1. 改表法(可能是你的帐号不允许从远程登陆，只能在localhost。这个时候只要在localhost的那台电脑，登入mysql后，更改 "mysql" 数据库里的 "user" 表里的 "host" 项，从"localhost"改称"%")
+
+> mysql -u root -p
+
+输入相应密码
+
+mysql>use mysql;
+
+mysql>show tables; (确认一下表user是否存在)
+
+mysql>update user set host='%' where user='root';
+
+mysql>quit
+
+退出mysql
+
+>service mysqld stop
+
+>service mysqld start
+
+现在远程连接这部mysql服务器就行了
+
+c:/mysql/mysql server 5.1>mysql -h 192.168.1.3 -u root -p
+
+2. 授权法
+例如，你想myuser使用mypassword从任何主机连接到mysql服务器的话。
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+
+如果你想允许用户myuser从ip为192.168.1.3的主机连接到mysql服务器，并使用mypassword作为密码
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+

@@ -1,0 +1,395 @@
+
+【卸载旧版本】
+老版本的Docker被称为docker或docker-engine。如果安装了它们，请卸载它们以及相关的依赖项。
+
+$ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+如果yum报告说没有安装这些软件包，那就行了。
+
+
+###################################################################################################################################
+
+
+【使用存储库进行安装】
+
+首次在新主机上安装Docker CE之前，需要设置Docker存储库。之后，您可以从存储库安装和更新Docker。
+
+设置存储库
+安装所需的包。yum-utils提供了yum-config-manager 效用，并device-mapper-persistent-data和lvm2由需要 devicemapper存储驱动程序。
+
+$ sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+
+使用以下命令设置稳定的存储库。即使您想从边缘或测试存储库安装构建，也总是需要稳定的存储 库。
+
+$ sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+
+可选：启用边缘和测试存储库。这些存储库包含在docker.repo上面的文件中，但默认情况下处于禁用状态。您可以将它们与稳定的存储库一起启用。
+
+
+$ sudo yum-config-manager --enable docker-ce-edge
+$ sudo yum-config-manager --enable docker-ce-test
+您可以通过使用该标志运行命令来禁用边缘或测试存储库 。要重新启用它，请使用标志。以下命令禁用边缘存储库。yum-config-manager--disable--enable
+
+
+$ sudo yum-config-manager --disable docker-ce-edge
+注意：从Docker 17.06开始，稳定版本也被推到边缘并测试版本库。
+
+
+了解稳定和边缘构建。
+
+【安装DOCKER CE】
+
+安装最新版本的Docker CE，或转到下一步安装特定版本。
+
+$ sudo yum install docker-ce
+警告：如果您启用了多个Docker存储库，则安装或更新时未指定版本yum install或 yum update命令始终会安装尽可能高的版本，这可能不适合您的稳定性需求。
+
+如果这是您第一次从最近添加的存储库安装软件包，系统会提示您接受GPG密钥，并显示密钥的指纹。验证指纹是否正确，如果是，请接受密钥。指纹应该匹配 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35。
+
+Docker已安装但未启动。该docker组已创建，但没有用户添加到组中。
+
+在生产系统上，您应该安装特定版本的Docker CE，而不是始终使用最新版本。列出可用的版本。此示例使用该sort -r命令按版本号对结果进行排序，从最高到最低并被截断。
+
+$ yum list docker-ce --showduplicates | sort -r
+
+docker-ce.x86_64            17.12.ce-1.el7.centos             docker-ce-stable
+列表内容取决于启用了哪些存储库，并且特定于您的CentOS .el7版本（在此示例中，由版本后缀指示）。选择一个特定的版本进行安装。
+第二列是版本字符串。您可以使用整个版本字符串，但您至少需要包含第一个连字符。第三列是存储库名称，它指示软件包来自哪个存储库并且通过扩展其稳定性级别。
+要安装特定版本，请将版本字符串附加到包名称并用连字符（-）分隔。
+
+注意：版本字符串是软件包名称加上第一个连字符的版本。在上面的例子中，完全限定的包名是docker-ce-17.06.1.ce。
+
+$ sudo yum install <FULLY-QUALIFIED-PACKAGE-NAME>
+启动Docker。
+
+$ sudo systemctl start docker
+docker通过运行hello-world 映像验证安装是否正确。
+
+$ sudo docker run hello-world
+该命令下载测试图像并将其运行到容器中。当容器运行时，它会打印一条信息消息并退出。
+
+
+###################################################################################################################################
+
+
+【从包中安装】
+
+
+如果您无法使用Docker的存储库来安装Docker，则可以下载该 .rpm文件以供手动安装。每次要升级Docker时，都需要下载一个新文件。
+
+转到 https://download.docker.com/linux/centos/7/x86_64/stable/Packages/ 并下载.rpm您想要安装的Docker版本的文件。
+
+注意：要安装边缘 包，stable请将上述URL中的单词更改 为edge。 了解稳定和边缘频道。
+
+安装Docker CE，将下面的路径更改为您下载Docker软件包的路径。
+
+$ sudo yum install /path/to/package.rpm
+Docker已安装但未启动。该docker组已创建，但没有用户添加到组中。
+
+启动Docker。
+
+$ sudo systemctl start docker
+docker通过运行hello-world 映像验证安装是否正确。
+
+$ sudo docker run hello-world
+该命令下载测试图像并将其运行到容器中。当容器运行时，它会打印一条信息消息并退出。
+
+
+###################################################################################################################################
+
+
+【卸载Docker CE】
+
+卸载Docker包：
+
+$ sudo yum remove docker-ce
+不会自动删除主机上的图像，容器，卷或自定义配置文件。删除所有图像，容器和卷：
+
+$ sudo rm -rf /var/lib/docker
+您必须手动删除任何已编辑的配置文件。
+
+
+###################################################################################################################################
+
+
+【作为非root用户管理Docker】
+
+该docker守护程序绑定到一个Unix套接字而不是TCP端口。默认情况下，Unix套接字由用户拥有root，其他用户只能使用它来访问它sudo。该docker守护进程始终运行的root用户。
+
+如果您sudo在使用该docker命令时不想使用，请创建一个名为的Unix组docker并将用户添加到该组中。当docker守护进程启动时，它使得Unix套接字的所有权可以被docker组读/写。
+
+警告：该docker组授予与root 用户等效的权限。有关这会如何影响系统安全性的详细信息，请参阅 Docker Daemon Attack Surface。
+
+要创建该docker组并添加您的用户：
+
+创建docker组。
+
+$ sudo groupadd docker
+将您的用户添加到docker组中。
+
+$ sudo usermod -aG docker $USER
+注销并重新登录，以便重新评估您的组成员资格。
+
+如果在虚拟机上进行测试，则可能需要重新启动虚拟机才能使更改生效。
+
+在桌面Linux环境（如X Windows）上，完全退出会话并重新登录。
+
+验证您可以不使用运行docker命令sudo。
+
+$ docker run hello-world
+该命令下载测试图像并将其运行到容器中。当容器运行时，它会打印一条信息消息并退出。
+
+如果最初sudo在将用户添加到docker组之前运行Docker CLI命令，则可能会看到以下错误，这表明您的~/.docker/目录是由于sudo命令而使用不正确的权限创建的。
+
+WARNING: Error loading config file: /home/user/.docker/config.json -
+stat /home/user/.docker/config.json: permission denied
+要解决此问题，请删除~/.docker/目录（它会自动重新创建，但任何自定义设置都会丢失），或使用以下命令更改其所有权和权限：
+
+$ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+$ sudo chmod g+rwx "/home/$USER/.docker" -R
+
+
+###################################################################################################################################
+
+
+
+【配置Docker在启动时启动】
+
+大多数当前的Linux发行版（RHEL，CentOS，Fedora，Ubuntu 16.04和更高版本）用于systemd管理系统启动时启动的服务。Ubuntu 14.10及以下版本使用upstart。
+
+systemd
+$ sudo systemctl enable docker
+要禁用此行为，请disable改为使用。
+
+$ sudo systemctl disable docker
+如果您需要添加HTTP代理，为Docker运行时文件设置不同的目录或分区，或者进行其他自定义，请参阅 自定义您的systemd Docker守护程序选项。
+
+upstart
+Docker会自动配置为在启动时使用 upstart。要禁用此行为，请使用以下命令：
+
+$ echo manual | sudo tee /etc/init/docker.override
+chkconfig
+$ sudo chkconfig docker on
+使用不同的存储引擎
+有关不同存储引擎的信息，请参阅 存储驱动程序。默认的存储引擎和受支持的存储引擎列表取决于您的主机的Linux发行版和可用的内核驱动程序。
+
+
+###################################################################################################################################
+
+
+【配置Docker守护程序侦听连接的位置】
+
+默认情况下，Docker守护程序在UNIX套接字上侦听连接。要使Docker能够接受来自远程主机的请求，您可以将其配置为监听IP地址和端口。它仍然需要在UNIX套接字上侦听，以接受来自本地客户端的请求。
+
+将hosts数组设置/etc/docker/daemon.json为连接到UNIX套接字和IP地址，如下所示：
+
+{
+  "hosts": ["fd://", "tcp://0.0.0.0:2375"]
+}
+重新启动Docker。通过查找dockerd过程来检查值是否被尊重。如果第1步工作，Docker守护进程会显示多个 -H标志：
+
+$ sudo ps aux |grep dockerd
+
+root     31239  0.7  0.2 1007880 72816 ?       Ssl  15:03   0:00 /usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
+如果你看到多个-H值，你就完成了。如果您看不到多个 -H值，请转至下一步。
+
+在某些Linux发行版（如RHEL和CentOS）中，文件中的hosts密钥 /etc/docker/daemon.json被docker.service服务配置文件的内容覆盖 。在这种情况下，您需要手动编辑此文件。
+
+使用该命令在文本编辑器中sudo systemctl edit docker.service打开该 docker.service文件。
+
+添加或修改以下行，替换您自己的值。
+
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
+保存文件。
+
+重新加载systemctl配置。
+
+  $ sudo systemctl daemon-reload
+重新启动Docker。
+
+$ sudo systemctl restart docker.service
+再次检查该dockerd命令现在是否侦听文件描述符和网络地址。
+
+$ sudo ps aux |grep dockerd
+
+root     31239  0.7  0.2 1007880 72816 ?       Ssl  15:03   0:00 /usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
+
+
+###################################################################################################################################
+
+
+
+【在Docker守护程序上启用IPv6】
+
+要在Docker守护程序上启用IPv6，请参阅 启用IPv6支持。
+
+
+###################################################################################################################################
+
+
+【故障排除】
+
+内核兼容性
+如果您的内核版本低于3.10版或者缺少某些模块，Docker无法正常运行。要检查内核兼容性，可以下载并运行check-config.sh 脚本。
+
+$ curl https://raw.githubusercontent.com/docker/docker/master/contrib/check-config.sh > check-config.sh
+
+$ bash ./check-config.sh
+该脚本仅适用于Linux，不适用于macOS。
+
+Cannot connect to the Docker daemon
+如果您看到如下所示的错误，您的Docker客户端可能被配置为连接到不同主机上的Docker守护进程，并且该主机可能无法访问。
+
+Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
+要查看客户端配置为连接到哪个主机，请检查DOCKER_HOST环境中变量的值。
+
+$ env | grep DOCKER_HOST
+如果此命令返回值，则将Docker客户端设置为连接到在该主机上运行的Docker守护程序。如果未设置，则将Docker客户端设置为连接到在本地主机上运行的Docker守护进程。如果设置错误，请使用以下命令取消设置：
+
+$ unset DOCKER_HOST
+您可能需要编辑您的文件中的环境，例如~/.bashrc或 ~/.profile防止DOCKER_HOST变量被设置错误。
+
+如果DOCKER_HOST按照预期设置，请验证Docker守护进程正在远程主机上运行，​​并且防火墙或网络中断不会阻止您连接。
+
+IP转发问题
+如果使用手动配置你的网络systemd-network有systemd 219或更高版本，Docker容器可能无法访问您的网络。从systemd版本220 开始，给定网络（net.ipv4.conf.<interface>.forwarding）的转发设置默认为关闭。此设置可防止IP转发。它也与Docker net.ipv4.conf.all.forwarding在容器中启用设置的行为相冲突。
+
+要在RHEL，CentOS或Fedora上解决此问题，请在您的Docker主机（例如：）上编辑该<interface>.network 文件，并在该部分中添加以下块。/usr/lib/systemd/network//usr/lib/systemd/network/80-container-host0.network[Network]
+
+[Network]
+...
+IPForward=kernel
+# OR
+IPForward=true
+...
+按照预期，此配置允许从容器转发IP。
+
+DNS resolver found in resolv.conf and containers can't use it
+它使用GUI Linux系统往往有运行网络管理器，它采用了 dnsmasq一个回环地址上运行，如实例127.0.0.1或 127.0.1.1缓存DNS请求，并增加了该条目 /etc/resolv.conf。该dnsmasq服务加快了DNS查找速度，并提供DHCP服务。此配置在具有自己的网络名称空间的Docker容器中不起作用，因为Docker容器解析127.0.0.1了 自身的环回地址，并且它不太可能在自己的回送地址上运行DNS服务器。
+
+如果Docker检测到没有引用的DNS服务器/etc/resolv.conf是全功能DNS服务器，则会发生以下警告，并且Docker使用Google提供的公共DNS服务器8.8.8.8以及8.8.4.4DNS解析。
+
+WARNING: Local (127.0.0.1) DNS resolver found in resolv.conf and containers
+can't use it. Using default external servers : [8.8.8.8 8.8.4.4]
+如果您看到此警告，请首先检查您是否使用dnsmasq：
+
+$ ps aux |grep dnsmasq
+如果您的容器需要解析网络内部的主机，则公用名称服务器不够用。你有两个选择：
+
+您可以指定一个Docker使用的DNS服务器，或者
+您可以dnsmasq在NetworkManager中禁用。如果你这样做，NetworkManager会添加你真正的DNS域名服务器/etc/resolv.conf，但你失去了可能的好处dnsmasq。
+你只需要使用这些方法之一。
+
+
+###################################################################################################################################
+
+
+【为Docker指定DNS服务器】
+
+配置文件的默认位置是/etc/docker/daemon.json。您可以使用--config-file 守护程序标志更改配置文件的位置。以下文档假定配置文件位于/etc/docker/daemon.json。
+
+创建或编辑默认为/etc/docker/daemon.json文件的Docker守护程序配置文件，该 文件控制Docker守护程序配置。
+
+$ sudo nano /etc/docker/daemon.json
+添加一个dns具有一个或多个IP地址作为值的密钥。如果文件具有现有内容，则只需添加或编辑该dns行。
+
+{
+	"dns": ["8.8.8.8", "8.8.4.4"]
+}
+如果您的内部DNS服务器无法解析公共IP地址，请至少包含一个DNS服务器，以便您可以连接到Docker Hub并使您的容器可以解析互联网域名。
+
+保存并关闭文件。
+
+重新启动Docker守护进程。
+
+$ sudo service docker restart
+验证Docker可以通过尝试拉取图像来解析外部IP地址：
+
+$ docker pull hello-world
+如有必要，请验证Docker容器可以通过对其进行ping来解析内部主机名。
+
+$ docker run --rm -it alpine ping -c4 <my_internal_host>
+
+PING google.com (192.168.1.2): 56 data bytes
+64 bytes from 192.168.1.2: seq=0 ttl=41 time=7.597 ms
+64 bytes from 192.168.1.2: seq=1 ttl=41 time=7.635 ms
+64 bytes from 192.168.1.2: seq=2 ttl=41 time=7.660 ms
+64 bytes from 192.168.1.2: seq=3 ttl=41 time=7.677 ms
+禁用 DNSMASQ
+Ubuntu的
+如果您不想将Docker守护程序的配置更改为使用特定IP地址，请按照以下说明dnsmasq在NetworkManager中禁用。
+
+编辑/etc/NetworkManager/NetworkManager.conf文件。
+
+通过dns=dnsmasq在行首添加一个#字符来注释该行。
+
+# dns=dnsmasq
+保存并关闭文件。
+
+重新启动NetworkManager和Docker。作为替代方案，您可以重新启动系统。
+
+$ sudo restart network-manager
+$ sudo restart docker
+RHEL，CentOS或Fedora
+dnsmasq在RHEL，CentOS或Fedora上禁用：
+
+禁用dnsmasq服务：
+
+$ sudo service dnsmasq stop
+
+$ sudo systemctl disable dnsmasq
+使用红帽文档手动配置DNS服务器 。
+
+
+###################################################################################################################################
+
+
+【允许通过防火墙访问远程API】
+
+如果您在运行Docker的同一台主机上运行防火墙，而您想从另一台主机访问Docker Remote API并启用远程访问，则需要配置防火墙以允许Docker端口上的传入连接，该连接默认为2376if TLS加密传输已启用或2375 以其他方式。
+
+两个常见的防火墙守护进程是 UFW（简单防火墙）（通常用于Ubuntu系统）和firewalld（通常用于基于RPM的系统）。请参阅您的操作系统和防火墙的文档，但以下信息可能有助于您入门。这些选项相当宽容，您可能需要使用不同的配置，以更多地锁定系统。
+
+UFW：DEFAULT_FORWARD_POLICY="ACCEPT"在您的配置中设置。
+
+firewalld：为您的策略添加类似以下的规则（一个用于传入请求，另一个用于传出请求）。确保接口名称和链接名称是正确的。
+
+<direct>
+  [ <rule ipv="ipv6" table="filter" chain="FORWARD_direct" priority="0"> -i zt0 -j ACCEPT </rule> ]
+  [ <rule ipv="ipv6" table="filter" chain="FORWARD_direct" priority="0"> -o zt0 -j ACCEPT </rule> ]
+</direct>
+Your kernel does not support cgroup swap limit capabilities
+在Ubuntu或Debian主机上，使用图像时可能会看到与以下内容类似的消息。
+
+WARNING: Your kernel does not support swap limit capabilities. Limitation discarded.
+在基于RPM的系统上不会发生此警告，默认情况下启用这些功能。
+
+如果您不需要这些功能，则可以忽略该警告。按照这些说明，您可以在Ubuntu或Debian上启用这些功能。即使Docker没有运行，内存和交换会计也会产生大约1％的总可用内存开销和10％的整体性能下降。
+
+以具有sudo权限的用户身份登录到Ubuntu或Debian主机。
+
+编辑/etc/default/grub文件。添加或编辑该GRUB_CMDLINE_LINUX行以添加以下两个键值对：
+
+GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+保存并关闭文件。
+
+更新GRUB。
+
+$ sudo update-grub
+如果您的GRUB配置文件的语法不正确，则会发生错误。在这种情况下，重复步骤3和4。
+
+系统重启时更改生效。

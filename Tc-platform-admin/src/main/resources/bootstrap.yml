@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: tc-platform-admin
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: tc-platform-config
+#      profile: dev
+  boot:
+    admin:
+      url: http://localhost:8785
+
+
+server:
+  port: 8785
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 6
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+management:
+  security:
+    enabled: false
+
+
+info:
+  author: ken
+  description: 系统管理
